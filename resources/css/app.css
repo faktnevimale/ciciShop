@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+    font-family: 'Nunito';
+    src: url('../../public/fonts/Montserrat/Montserrat.ttf');
+}
+
+@font-face {
+    font-family: 'NunitoLight';
+    src: url('../../public/fonts/Montserrat/Montserrat.ttf');
+}
+@font-face {
+    font-family: 'BebasNeue';
+    src: url("../../public/fonts/PlayFair_Display/PlayfairDisplay.ttf");
+}
+html.lenis, html.lenis body {
+    height: auto;
+   }
+   .lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+   }
+   .lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+   }
+   .lenis.lenis-stopped {
+    overflow: hidden;
+   }
+   .lenis.lenis-smooth iframe {
+    pointer-events: none;
+   }
