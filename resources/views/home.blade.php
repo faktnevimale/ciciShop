@@ -10,7 +10,7 @@
         ],
         [
             'title' => 'Tady růžová nikdy nekončí!',
-            'description' => 'Hello Kitty ví, co ti rozzáří den.',
+            'description' => 'Hello Kitty ví, co Vám rozzáří den.',
             'image' => asset('images/dmv2.png'),
             'alt' => 'headGasket',
             'link' => '/products',
