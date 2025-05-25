@@ -1,11 +1,14 @@
-<footer class="bg-black text-white pt-12 pb-6">
-    <div class="container mx-auto px-4">
+<footer class="bg-pink-200 text-white pt-1 pb-1">
+
+
+    <div class="container mx-auto px-2">
         <!-- Top Section with Logo and Newsletter -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8 pb-8 border-b border-gray-800">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4 pb-4 border-b border-gray-800">
+
             <!-- Logo and About -->
             <div>
                 <div class="flex items-center space-x-4 mb-4">
-                    <img src="/images/logo.png" alt="CELLife Logo" width="100">
+                    <img src="/images/logo.png" alt="čičiShop Logo" width="100">
                 </div>
                 <p class="text-gray-400 mb-4" style="font-family: NunitoLight;">
                    

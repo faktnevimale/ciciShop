@@ -1,6 +1,7 @@
 <div class="bg-pink-50 min-h-screen">
     <!-- Hero Banner -->
-    <div class="bg-black text-white py-16">
+<div class="bg-pink-200 text-pink-400 py-16">
+
         <div class="container mx-auto px-4">
             <h1 class="text-5xl font-bold text-center mb-4 mt-20" style="font-family: BebasNeue;">KONTAKTUJTE NÁS</h1>
         </div>
@@ -42,6 +43,10 @@
             </form>
         </div>
 
-        
+        <form method="POST" action="{{ route('contact.send') }}">
+    @csrf
+    <!-- zbytek formuláře -->
+</form>
+
     </div>
 </div>

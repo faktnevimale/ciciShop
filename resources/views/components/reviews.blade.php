@@ -1,40 +1,40 @@
 @php
 $reviews = [
     [
-        'author' => 'Tomáš Kovařík',
+        'author' => 'Eliška Nová',
         'date' => 'Leden 18, 2025',
         'rating' => 5,
-        'text' => 'Produkty dorazily v pořádku a velmi rychle. Nakupuji zde poprvé, ale určitě ne naposledy.',
+        'text' => 'Produkty dorazily v pořádku a dodání bylo rychlé. Super.',
     ],
     [
-        'author' => 'Adam Beneš',
-        'date' => 'Září 17, 2025',
-        'rating' => 4,
-        'text' => 'Výborná kvalita za rozumnou cenu. Obchod mě mile překvapil.',
-    ],
-    [
-        'author' => 'Richard Malý',
-        'date' => 'Květen 16, 2025',
+        'author' => 'Adéla Nováková',
+        'date' => 'Květen 11, 2025',
         'rating' => 5,
-        'text' => 'Přehledný e-shop, kvalitní zboží a vstřícná komunikace. Doporučuji.'
+        'text' => 'Produkty za rozumnou cenu. Spokojenost.',
     ],
     [
-        'author' => 'Ondřej Král',
-        'date' => 'Únor 21, 2025',
+        'author' => 'Beata Malá',
+        'date' => 'Červen 6, 2024',
+        'rating' => 5,
+        'text' => 'Přehledný e-shop, kvalitní zboží a skvělá komunikace. Doporučuji.'
+    ],
+    [
+        'author' => 'Iveta Bláhová',
+        'date' => 'Leden 27, 2025',
         'rating' => 5,
         'text' => 'Nakupovalo se mi velmi dobře. Stránky jsou jednoduché a dodání bylo rychlé.',
     ],
     [
-        'author' => 'Lucie Horáková',
-        'date' => 'Březen 5, 2025',
+        'author' => 'Aneta Milá',
+        'date' => 'Listopad 5, 2024',
         'rating' => 5,
-        'text' => 'Všechno přišlo v pořádku, pečlivě zabalené. Velká spokojenost.',
+        'text' => 'Všechno v pořádku, zboží bylo hezky zabalené.',
     ],
     [
-        'author' => 'Jakub Dvořák',
-        'date' => 'Duben 12, 2025',
+        'author' => 'Jolana Tichá',
+        'date' => 'Duben 9, 2025',
         'rating' => 4,
-        'text' => 'Komunikace v pořádku, výběr super. Jen dodání mohlo být trochu rychlejší.',
+        'text' => 'Zboží v pořádku, komunikace dobrá. Jen dodání mohlo být trochu rychlejší.',
     ],
 ];
 
@@ -46,11 +46,10 @@ foreach ($reviews as $review) {
 $averageRating = number_format($totalRating / count($reviews), 1);
 @endphp
 
-<section class="reviews-section py-16 bg-gray-50 overflow-hidden">
+<section class="reviews-section py-16 bg-pink-50 overflow-hidden">
     <div class="">
         <div class="text-center mb-12">
-            <h2 class="text-4xl font-bold mb-4" style="font-family: BebasNeue, sans-serif;">CO O NÁS ŘÍKAJÍ ZÁKAZNÍCI</h2>
-            <div class="w-24 h-1 bg-blue-400 mx-auto"></div>
+            <h2 class="text-4xl font-bold mb-4 text-pink-400" style="font-family: BebasNeue, sans-serif;">CO O NÁS ŘÍKAJÍ ZÁKAZNÍCI</h2>
         </div>
 
         <!-- Infinite Scroll Reviews -->
@@ -62,11 +61,11 @@ $averageRating = number_format($totalRating / count($reviews), 1);
                     <div class="bg-white rounded-lg shadow-lg overflow-hidden h-full transform transition-all duration-300 hover:shadow-xl hover:scale-105 hover:-translate-y-1">
                         <div class="p-6">
                             <div class="flex items-center mb-4">
-                                <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4 overflow-hidden">
+                                <div class="w-12 h-12 bg-pink-100 rounded-full flex items-center justify-center mr-4 overflow-hidden">
                                     @if (isset($review['avatar']))
                                         <img src="{{ asset('images/avatars/' . $review['avatar']) }}" alt="{{ $review['author'] }}" class="w-full h-full object-cover">
                                     @else
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-pink-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                                         </svg>
                                     @endif
@@ -80,7 +79,7 @@ $averageRating = number_format($totalRating / count($reviews), 1);
                             <div class="flex mb-3">
                                 @for ($i = 1; $i <= 5; $i++)
                                     @if ($i <= $review['rating'])
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-400" viewBox="0 0 20 20" fill="currentColor">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-pink-400" viewBox="0 0 20 20" fill="currentColor">
                                             <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                                         </svg>
                                     @else
@@ -97,7 +96,7 @@ $averageRating = number_format($totalRating / count($reviews), 1);
 
                             <div class="mt-4 pt-4 border-t border-gray-100">
                                 <div class="flex items-center">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-pink-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                                     </svg>
                                     <span class="text-sm text-gray-500" style="font-family: NunitoLight, sans-serif;">Ověřený nákup</span>
@@ -114,11 +113,11 @@ $averageRating = number_format($totalRating / count($reviews), 1);
                     <div class="bg-white rounded-lg shadow-lg overflow-hidden h-full transform transition-all duration-300 hover:shadow-xl hover:scale-105 hover:-translate-y-1">
                         <div class="p-6">
                             <div class="flex items-center mb-4">
-                                <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4 overflow-hidden">
+                                <div class="w-12 h-12 bg-pink-100 rounded-full flex items-center justify-center mr-4 overflow-hidden">
                                     @if (isset($review['avatar']))
                                         <img src="{{ asset('images/avatars/' . $review['avatar']) }}" alt="{{ $review['author'] }}" class="w-full h-full object-cover">
                                     @else
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-pink-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                                         </svg>
                                     @endif
@@ -132,7 +131,7 @@ $averageRating = number_format($totalRating / count($reviews), 1);
                             <div class="flex mb-3">
                                 @for ($i = 1; $i <= 5; $i++)
                                     @if ($i <= $review['rating'])
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-400" viewBox="0 0 20 20" fill="currentColor">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-pink-400" viewBox="0 0 20 20" fill="currentColor">
                                             <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                                         </svg>
                                     @else
@@ -149,7 +148,7 @@ $averageRating = number_format($totalRating / count($reviews), 1);
 
                             <div class="mt-4 pt-4 border-t border-gray-100">
                                 <div class="flex items-center">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-pink-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                                     </svg>
                                     <span class="text-sm text-gray-500" style="font-family: NunitoLight, sans-serif;">Ověřený nákup</span>
@@ -168,7 +167,7 @@ $averageRating = number_format($totalRating / count($reviews), 1);
                 <div class="flex mr-3">
                     @for ($i = 1; $i <= 5; $i++)
                         @if ($i <= floor($averageRating))
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-400" viewBox="0 0 20 20" fill="currentColor">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-pink-400" viewBox="0 0 20 20" fill="currentColor">
                                 <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                             </svg>
                         @elseif ($i - $averageRating > 0 && $i - $averageRating < 1)
@@ -177,7 +176,7 @@ $averageRating = number_format($totalRating / count($reviews), 1);
                                     <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                                 </svg>
                                 <div class="absolute overflow-hidden" style="width: {{ ($averageRating - floor($averageRating)) * 100 }}%">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-400" viewBox="0 0 20 20" fill="currentColor">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-pink-400" viewBox="0 0 20 20" fill="currentColor">
                                         <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                                     </svg>
                                 </div>
@@ -196,7 +195,7 @@ $averageRating = number_format($totalRating / count($reviews), 1);
 
         <!-- Call to Action
         <div class="mt-8 text-center">
-            <a href="/reviews" class="inline-flex items-center px-6 py-3 bg-blue-400 text-black font-semibold rounded-lg hover:bg-blue-500 transition-colors duration-300">
+            <a href="/reviews" class="inline-flex items-center px-6 py-3 bg-pink-400 text-black font-semibold rounded-lg hover:bg-pink-500 transition-colors duration-300">
                 <span>Zobrazit všechna hodnocení</span>
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
                     <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />

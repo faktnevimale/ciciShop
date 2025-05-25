@@ -5,8 +5,18 @@ namespace App\Http\Controllers;
 use App\Models\Contact;
 use Illuminate\Http\Request;
 
+
+
+
 class ContactController extends Controller
 {
+
+    public function send(Request $request)
+    {
+        // zde můžeš přidat validaci, EmailJS, cokoliv...
+        return back()->with('success', 'Zpráva byla odeslána!');
+    }
+    
     /**
      * Display a listing of the resource.
      */

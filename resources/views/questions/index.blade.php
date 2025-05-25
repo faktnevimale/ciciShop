@@ -3,7 +3,8 @@
 @section('content')
 <div class="bg-pink-50 min-h-screen">
     <!-- Hero Banner -->
-    <div class="bg-black text-white py-16">
+    <div class="bg-pink-200 text-pink-400 py-16">
+
         <div class="container mx-auto px-4">
             <h1 class="text-5xl font-bold text-center mb-4 mt-20" style="font-family: BebasNeue;">ČASTÉ DOTAZY</h1>
            
@@ -38,7 +39,7 @@
 
         <!-- FAQs -->
         <div class="max-w-3xl mx-auto">
-            <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+            <div class="bg-pink-100 rounded-2xl shadow overflow-hidden">
                 @php
                     $faqs = [
                         [
@@ -49,7 +50,7 @@
                         ],
                         [
                             'question' => 'Jak mohu kontaktovat podporu?',
-                            'answer' => 'Podporu můžete kontaktovat prostřednictvím našeho e-mailu <strong>support@support.cz</strong> nebo telefonicky na čísle <strong>123 456 789</strong>. Jsme k dispozici každý pracovní den od 9:00 do 17:00.',
+                            'answer' => 'Podporu můžete kontaktovat prostřednictvím našeho e-mailu <strong>support@support.cz</strong> nebo telefonicky na čísle <strong>987 654 321</strong>. K dispozici jsme v pracovní dny od 8:00 do 15:00.',
                             'category' => 'contact',
                           
                         ],
@@ -79,7 +80,7 @@
                         ],
                         [
                             'question' => 'Jaké platební metody přijímáte?',
-                            'answer' => 'Přijímáme platby kartou (Visa, Mastercard), bankovním převodem, dobírkou a online platebními metodami jako je Apple Pay, Google Pay a PayPal. Všechny online platby jsou zabezpečené a šifrované.',
+                            'answer' => 'Přijímáme platby kartou, bankovním převodem, dobírkou a online platebními metodami jako je Apple Pay, Google Pay a PayPal. Všechny online platby jsou zabezpečené a šifrované.',
                             'category' => 'orders',
                             
                         ],
