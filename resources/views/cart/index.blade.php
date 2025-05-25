@@ -1,12 +1,12 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="bg-gray-50 min-h-screen pt-20">
+<div class="bg-pink-50 min-h-screen pt-20">
     <div class="container mx-auto px-4 py-8 max-w-6xl">
         <h1 class="text-4xl font-bold text-center mb-8" style="font-family: BebasNeue;">NÁKUPNÍ KOŠÍK</h1>
 
         <div class="text-center mb-8">
-            <a href="{{ route('products.index') }}" class="inline-flex items-center px-6 py-3 text-white bg-blue-400   hover:bg-blue-500 transition duration-300 ease-in-out" style="font-family: Nunito;">
+            <a href="{{ route('products.index') }}" class="inline-flex items-center px-6 py-3 text-white bg-pink-400   hover:bg-pink-500 transition duration-300 ease-in-out" style="font-family: Nunito;">
                 <x-heroicon-o-arrow-left class="h-5 w-5 mr-2" />
                 Zpět na produkty
             </a>
@@ -19,7 +19,7 @@
 
             <div class="overflow-hidden bg-white shadow-lg rounded-xl mb-8">
                 <table class="min-w-full table-auto">
-                    <thead class="bg-black text-white">
+                    <thead class="bg-pink-200 text-white">
                         <tr>
                             <th class="px-6 py-4 text-left" style="font-family: Nunito;">Produkt</th>
                             <th class="px-6 py-4 text-left" style="font-family: Nunito;">Cena</th>
@@ -60,7 +60,7 @@
                                     <form action="{{ route('cart.remove', $id) }}" method="POST" class="inline-block">
                                         @csrf
                                         @method('DELETE')
-                                        <button type="submit" class="text-red-500 hover:text-red-700 transition duration-200 flex items-center">
+                                        <button type="submit" class="text-pink-500 hover:text-red-700 transition duration-200 flex items-center">
                                             <x-heroicon-o-trash class="h-5 w-5 mr-1" />
                                             <span style="font-family: Nunito;">Odstranit</span>
                                         </button>
@@ -75,7 +75,7 @@
             <div class="bg-white p-6 rounded-xl shadow-lg">
                 <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
                     <div class="w-full md:w-1/2">
-                        <div class="bg-gray-50 p-4 rounded-lg">
+                        <div class="bg-pink-50 p-4 rounded-lg">
                             <h3 class="text-lg font-bold mb-3" style="font-family: Nunito;">Shrnutí objednávky</h3>
                             <div class="flex justify-between mb-2">
                                 <span style="font-family: NunitoLight;">Mezisoučet:</span>
@@ -93,12 +93,12 @@
                     </div>
 
                     <div class="w-full md:w-1/2 flex flex-col items-end">
-                        <a href="{{ route('checkout.index') }}" class="inline-flex items-center px-8 py-4 bg-black text-white rounded-lg shadow-md hover:bg-blue-400 transition duration-300 w-full md:w-auto justify-center" style="font-family: Nunito;">
+                        <a href="{{ route('checkout.index') }}" class="inline-flex items-center px-8 py-4 bg-pink-200 text-white rounded-lg shadow-md hover:bg-pink-400 transition duration-300 w-full md:w-auto justify-center" style="font-family: Nunito;">
                             <span>Přejít k pokladně</span>
                             <x-heroicon-o-arrow-right class="h-5 w-5 ml-2" />
                         </a>
 
-                        <a href="{{ route('products.index') }}" class="inline-flex items-center mt-4 text-black hover:text-blue-600 transition-colors" style="font-family: NunitoLight;">
+                        <a href="{{ route('products.index') }}" class="inline-flex items-center mt-4 text-pink-300 hover:text-pink-600 transition-colors" style="font-family: NunitoLight;">
                             <x-heroicon-o-shopping-bag class="h-5 w-5 mr-1" />
                             Pokračovat v nákupu
                         </a>
@@ -107,12 +107,12 @@
             </div>
         @else
             <div class="bg-white p-12 rounded-xl shadow-lg text-center">
-                <div class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <x-heroicon-o-shopping-cart class="h-10 w-10 text-blue-500" />
+                <div class="w-20 h-20 bg-pink-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <x-heroicon-o-shopping-cart class="h-10 w-10 text-pink-500" />
                 </div>
                 <h2 class="text-2xl font-bold mb-4" style="font-family: Nunito;">Váš košík je prázdný</h2>
                 <p class="text-gray-600 mb-8" style="font-family: NunitoLight;">Prohlédněte si naše produkty a přidejte něco do košíku!</p>
-                <a href="{{ route('products.index') }}" class="inline-flex items-center px-8 py-4 bg-blue-400 text-white rounded-lg shadow-md hover:bg-blue-500 transition duration-300" style="font-family: Nunito;">
+                <a href="{{ route('products.index') }}" class="inline-flex items-center px-8 py-4 bg-pink-400 text-white rounded-lg shadow-md hover:bg-pink-500 transition duration-300" style="font-family: Nunito;">
                     <x-heroicon-o-shopping-bag class="h-5 w-5 mr-2" />
                     Prozkoumat produkty
                 </a>
