@@ -14,7 +14,7 @@
                         <x-heroicon-o-truck class="h-10 w-10 text-pink-500" />
                     </div>
                     <h3 class="text-xl text-pink-300 font-bold mb-3">Rychlá Doprava</h3>
-                    <p class="text-gray-600 text-center">Rychlou dopravu máme, dokud nám neproletí kapotou ojnice. Obvykle do druhého dne je zboží u Vás.</p>
+                    <p class="text-gray-600 text-center">Hello Kitty posílá balíčky fofrem – obvykle do druhého dne jsou u vás jako mávnutím kouzelné mašličky!</p>
                 </div>
 
             </div>
@@ -25,8 +25,8 @@
                     <div class="flex justify-center items-center w-20 h-20 bg-pink-100 rounded-full mb-6">
                         <x-heroicon-o-academic-cap class="h-10 w-10 text-pink-500" />
                     </div>
-                    <h3 class="text-xl text-pink-300 font-bold mb-3">Autorizovaní prodejci</h3>
-                    <p class="text-gray-600 text-center">Jsme partneři se značkami BMW a Subaru. Vyšší cena Vás bude odrazovat, ale víme, že Vašeho miláčka nenecháte stát na cihlách.</p>
+                    <h3 class="text-xl text-pink-300 font-bold mb-3">Originální produkty</h3>
+                    <p class="text-gray-600 text-center">Nakupujete u nás bezpečně – jsme Hello Kitty schválení! U nás najdete jen originální produkty!</p>
                 </div>
 
             </div>
@@ -38,7 +38,7 @@
                         <x-heroicon-o-chat-bubble-bottom-center class="h-10 w-10 text-pink-500" />
                     </div>
                     <h3 class="text-xl text-pink-300 font-bold mb-3">Zákaznická Podpora</h3>
-                    <p class="text-gray-600 text-center">Za naší podporu nemusíte platit, jako u BMW. Jsme tady pro Vás pořád. Poradíme, vysvětlíme a klidně Vám poskytneme i rameno na vyplakání.</p>
+                    <p class="text-gray-600 text-center">Máte dotaz? Napište nám! Naše zákaznická podpora vám odpoví rychle a s láskou.</p>
                 </div>
 
             </div>
