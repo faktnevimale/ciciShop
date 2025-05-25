@@ -17,7 +17,7 @@
         ],
         [
             'title' => 'Mašličky, třpytky, roztomilost. To je náš svět.',
-            'description' => 'A teď už i tvůj.',
+            'description' => 'A teď už i Váš.',
             'image' => asset('images/dm4.png'),
             'alt' => 'catalyticConverter',
             'link' => '/products',
