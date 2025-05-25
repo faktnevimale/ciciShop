@@ -14,3 +14,4 @@
     <p>Děkujeme za váš nákup!</p>
 </body>
 </html>
+</div>
