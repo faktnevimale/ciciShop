@@ -3,10 +3,11 @@
 @section('content')
 <div class="bg-pink-50 min-h-screen pt-20">
     <div class="container mx-auto px-4 py-8 max-w-6xl">
-        <h1 class="text-4xl font-bold text-center mb-8" style="font-family: BebasNeue;">NÁKUPNÍ KOŠÍK</h1>
+       <h1 class="text-4xl font-bold text-center mb-8 text-pink-400" style="font-family: BebasNeue;">NÁKUPNÍ KOŠÍK</h1>
+
 
         <div class="text-center mb-8">
-            <a href="{{ route('products.index') }}" class="inline-flex items-center px-6 py-3 text-white bg-pink-400   hover:bg-pink-500 transition duration-300 ease-in-out" style="font-family: Nunito;">
+            <a href="{{ route('products.index') }}" class="inline-flex items-center px-6 py-3 text-white bg-pink-300   hover:bg-pink-500 transition duration-300 ease-in-out" style="font-family: Nunito;">
                 <x-heroicon-o-arrow-left class="h-5 w-5 mr-2" />
                 Zpět na produkty
             </a>

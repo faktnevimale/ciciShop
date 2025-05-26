@@ -2,7 +2,7 @@
 @php
     $slides = [
         [
-            'title' => 'Vítej v říši Hello Kitty!',
+            'title' => 'Vítejte v říši Hello Kitty!',
             'description' => 'Roztomilost začíná právě tady.',
             'image' => asset('images/dm.png'),
             'alt' => 'engineLight',

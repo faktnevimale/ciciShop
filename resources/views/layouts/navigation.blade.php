@@ -32,7 +32,7 @@
                 <form action="{{ route('products.index') }}" method="GET" class="w-full md:w-1/3 mt-2">
                     <div class="relative">
                         <input type="text" name="query" placeholder="Hledat.."
-                               class="w-full p-3 pl-10 pr-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-400 focus:border-transparent"
+                               class="w-full p-3 pl-10 pr-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-400 focus:border-transparent"
                                value="{{ request('query') }}" style="font-family: NunitoLight;">
                         <button type="submit" class="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500">
                             <x-heroicon-o-magnifying-glass class="h-5 w-5" />
@@ -44,11 +44,11 @@
 
             <!-- User Dropdown -->
             <div x-data="{ open: false }" @click.away="open = false" class="relative ml-auto">
-                <button @click="open = !open" class="inline-flex items-end px-3 pb-5 pt-6 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 dark:text-gray-400 bg-white dark:bg-gray-800 hover:text-gray-700 dark:hover:text-gray-300 focus:outline-none transition ease-in-out duration-150">
+                <button @click="open = !open" class="inline-flex items-end px-3 pb-5 pt-6 border border-transparent text-sm leading-4 font-medium rounded-md text-pink-300 dark:text-pink-400 bg-white dark:bg-pink-800 hover:text-pink-700 dark:hover:text-pink-300 focus:outline-none transition ease-in-out duration-150">
                     @auth
                         <div>{{ Auth::user()->name }}</div>
                     @else
-                        <div>{{ __('Anonymní anonym') }}</div>
+                        <div>{{ __('Host') }}</div>
                     @endauth
                     <div class="ms-1">
                         <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
@@ -58,7 +58,7 @@
                 </button>
 
                 <div x-show="open" x-transition
-                    class="absolute right-0 w-48 bg-white dark:bg-gray-800 rounded-md shadow-lg z-50 mt-2">
+                    class="absolute right-0 w-48 bg-white dark:bg-pink-500 rounded-md shadow-lg z-50 mt-2">
                     @auth
                         <form method="POST" action="{{ route('logout') }}">
                             @csrf
@@ -73,8 +73,8 @@
 
 
             <!-- Cart Button (top-right) -->
-            <a href="{{ route('cart.index') }}" class="relative inline-flex items-center justify-center p-2 rounded-md text-black dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300 focus:outline-none transition ease-in-out duration-150">
-            <x-heroicon-o-shopping-bag class="h-6 w-6 text-black dark:text-gray-400" />
+            <a href="{{ route('cart.index') }}" class="relative inline-flex items-center justify-center p-2 rounded-md text-black dark:text-pink-400 hover:text-pink-700 dark:hover:text-pink-300 focus:outline-none transition ease-in-out duration-150">
+            <x-heroicon-o-shopping-bag class="h-6 w-6 text-black dark:text-pink-400" />
                 @if(session('cart') && count(session('cart')) > 0)
                     <span class="cart-badge">
                         {{ count(session('cart')) }}
@@ -98,7 +98,7 @@
     <div :class="{'block': open, 'hidden': ! open}" class="hidden sm:hidden">
         <form method="GET" action="{{ route('products.index') }}" class="flex items-center">
             <input type="text" name="query" placeholder="Hledat produkt..." class="px-4 py-2 border rounded" value="{{ request('query') }}">
-            <button type="submit" class="ml-2 bg-blue-500 text-white px-4 py-2 rounded">Hledat</button>
+            <button type="submit" class="ml-2 bg-pink-500 text-white px-4 py-2 rounded">Hledat</button>
         </form>
         <div class="pt-2 pb-3 space-y-1">
             <x-responsive-nav-link :href="route('home')" :active="request()->routeIs('home')">

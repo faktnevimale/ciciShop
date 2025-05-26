@@ -19,22 +19,22 @@
                 <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-4">
                     <div class="relative">
                         <input type="text" id="first_name" name="first_name" placeholder="Jméno"
-                            class="w-full border border-gray-600 focus:border-pink-400 outline-none bg-gray-800 bg-opacity-50 p-3 text-lg rounded-md">
+                            class="w-full border border-gray-600 focus:border-pink-400 outline-none bg-pink-300 bg-opacity-50 p-3 text-lg rounded-md">
                     </div>
                     <div class="relative">
                         <input type="text" id="last_name" name="last_name" placeholder="Příjmení"
-                            class="w-full border border-gray-600 focus:border-pink-400 outline-none bg-gray-800 bg-opacity-50 p-3 text-lg rounded-md">
+                            class="w-full border border-gray-600 focus:border-pink-400 outline-none bg-pink-300 bg-opacity-50 p-3 text-lg rounded-md">
                     </div>
                 </div>
 
                 <div class="relative">
                     <input type="email" id="email" name="email" placeholder="E-mail"
-                        class="w-full border border-gray-600 focus:border-pink-400 outline-none bg-gray-800 bg-opacity-50 p-3 text-lg rounded-md">
+                        class="w-full border border-gray-600 focus:border-pink-400 outline-none bg-pink-300 bg-opacity-50 p-3 text-lg rounded-md">
                 </div>
 
                 <div class="relative">
                     <textarea id="message" name="message" placeholder="Vaše zpráva"
-                        class="w-full border border-gray-600 focus:border-pink-400 outline-none bg-gray-800 bg-opacity-50 p-3 text-lg h-24 rounded-md"></textarea>
+                        class="w-full border border-gray-600 focus:border-pink-400 outline-none bg-pink-300 bg-opacity-50 p-3 text-lg h-24 rounded-md"></textarea>
                 </div>
 
                 <button type="submit" class="mt-6 bg-pink-400 hover:bg-pink-700 text-white font-bold py-3 px-6 rounded-md">

@@ -13,7 +13,7 @@
             <img src="{{ asset('storage/' . $product->images[0]) }}" alt="{{ $product->name }}" class="w-full h-48 object-cover rounded-lg mb-4">
             <h3 class="text-xl font-semibold text-gray-800">{{ $product->name }}</h3>
             <p class="text-lg text-gray-600">{{ $product->price }} Kč</p>
-            <a href="{{ route('products.show', $product->id) }}" class="text-blue-500 hover:text-blue-600">View Product</a>
+            <a href="{{ route('products.show', $product->id) }}" class="text-pink-500 hover:text-pink-600">View Product</a>
         </div>
         @endforeach
     </div>

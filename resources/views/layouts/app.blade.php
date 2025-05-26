@@ -88,8 +88,8 @@
     <div class="layout-wrapper bg-gray-100 dark:bg-gray-900">
         <!-- Page transition overlay with "Barvio" text -->
         <div class="page-transition">
-            <div class="transition-text">SKATESHOP</div>
-            <div class="transition-sub">Super obchod s skate věcmi.</div>
+            <div class="transition-text"></div>
+            <div class="transition-sub"></div>
         </div>
 
         @include('layouts.navigation')

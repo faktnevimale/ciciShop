@@ -1,7 +1,5 @@
 <footer class="bg-pink-200 text-white pt-1 pb-1">
-
-
-    <div class="container mx-auto px-2">
+ <div class="container mx-auto px-2">
         <!-- Top Section with Logo and Newsletter -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4 pb-4 border-b border-gray-800">
 
@@ -10,9 +8,6 @@
                 <div class="flex items-center space-x-4 mb-4">
                     <img src="/images/logo.png" alt="čičiShop Logo" width="100">
                 </div>
-                <p class="text-gray-400 mb-4" style="font-family: NunitoLight;">
-                   
-                </p>
                 <div class="flex space-x-4">
                     <a href="#" class="text-gray-400 hover:text-pink-400 transition-colors">
                         <x-heroicon-o-globe-alt class="h-6 w-6" />
@@ -28,10 +23,17 @@
                         </svg>
                     </a>
                 </div>
+                  <p class="text-gray-400 mb-5" style="font-family: NunitoLight; margin-top: 30px;">
+    +420 987 654 321
+</p>
+<p class="text-gray-400 mb-5" style="font-family: NunitoLight; margin-top: 30px;">
+    support@support.com
+</p>
+
             </div>
 
             <!-- Quick Links -->
-            <div class="grid grid-cols-2 gap-8">
+            <div class="grid grid-cols-3 gap-5">
                 <div>
                     <h3 class="text-lg font-bold mb-4" style="font-family: BebasNeue;">NAVIGACE</h3>
                     <ul class="space-y-2" style="font-family: NunitoLight;">
@@ -52,13 +54,14 @@
                 </div>
             </div>
 
-            <!-- Newsletter -->
-            <div>
-                <h3 class="text-lg font-bold mb-4" style="font-family: BebasNeue;">ODBĚR NOVINEK</h3>
-                <p class="text-gray-400 mb-4" style="font-family: NunitoLight;">
-                    Přihlaste se k odběru novinek a nepropásněte výhodné nabídky.
-                </p>
-                <form action="#" method="POST" class="flex">
+           <!-- Newsletter -->
+<div class="ml-[-20px]"> <!-- nebo ml-[-10px], ml-[-24px] – podle potřeby -->
+    <h3 class="text-lg font-bold mb-4" style="font-family: BebasNeue;">ODBĚR NOVINEK</h3>
+    <p class="text-gray-400 mb-4" style="font-family: NunitoLight;">
+        Přihlaste se k odběru novinek a nepropásněte výhodné nabídky.
+    </p>
+
+   <form action="#" method="POST" class="flex">
                     <input type="email" name="email" placeholder="Váš e-mail" required
                            class="flex-1 py-2 px-4 bg-gray-800 text-white border border-gray-700 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-pink-400 focus:border-transparent"
                            style="font-family: NunitoLight;">
