@@ -36,7 +36,7 @@
             <div class="grid grid-cols-3 gap-5">
                 <div>
                     <h3 class="text-lg font-bold mb-4" style="font-family: BebasNeue;">NAVIGACE</h3>
-                    <ul class="space-y-2" style="font-family: NunitoLight;">
+                    <ul class="space-y-4" style="font-family: NunitoLight;">
                         <li><a href="{{ route('home') }}" class="text-gray-400 hover:text-pink-400 transition-colors">Domů</a></li>
                         <li><a href="{{ route('products.index') }}" class="text-gray-400 hover:text-pink-400 transition-colors">Produkty</a></li>
                         <li><a href="{{ route('questions.index') }}" class="text-gray-400 hover:text-pink-400 transition-colors">Časté dotazy</a></li>
@@ -45,7 +45,7 @@
                 </div>
                 <div>
                     <h3 class="text-lg font-bold mb-4" style="font-family: BebasNeue;">INFORMACE</h3>
-                    <ul class="space-y-2" style="font-family: NunitoLight;">
+                    <ul class="space-y-4" style="font-family: NunitoLight;">
                         <li><a href="#" class="text-gray-400 hover:text-pink-400 transition-colors">O nás</a></li>
                         <li><a href="#" class="text-gray-400 hover:text-pink-400 transition-colors">Doprava a platba</a></li>
                         <li><a href="#" class="text-gray-400 hover:text-pink-400 transition-colors">Obchodní podmínky</a></li>
@@ -55,7 +55,7 @@
             </div>
 
            <!-- Newsletter -->
-<div class="ml-[-20px]"> <!-- nebo ml-[-10px], ml-[-24px] – podle potřeby -->
+<div class="ml-[-19px]"> <!-- nebo ml-[-10px], ml-[-24px] – podle potřeby -->
     <h3 class="text-lg font-bold mb-4" style="font-family: BebasNeue;">ODBĚR NOVINEK</h3>
     <p class="text-gray-400 mb-4" style="font-family: NunitoLight;">
         Přihlaste se k odběru novinek a nepropásněte výhodné nabídky.
